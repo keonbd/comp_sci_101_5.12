@@ -1,0 +1,16 @@
+''' Type your code here. '''
+text = input()
+text = text.split()
+char = text[0]
+count = 0
+text.pop(0)
+for i in text:
+    if char in i:
+        times = i.count(char)
+        count += times
+if count > 1:
+    print(f"{count} {char}'s")
+elif count == 1:
+    print(f"{count} {char}")
+else:
+    print(f"{count} {char}'s")
